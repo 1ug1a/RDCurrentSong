@@ -10,7 +10,7 @@ How to install:
 4. Put `RDCurrentSong.dll` into the `BepinEx/plugins` folder.
 5. Run the game again. By default, it'll output the `.txt` file to the folder containing the game `.exe`. You can change this in the config file.
 
-Required libraries to compile the `.dll` yourself (not included, need to add to `Libs`):
+Required libraries to compile the `.dll` yourself (not included because of copyright, need to add to `Libs`):
 * BepinEx.dll (from `BepinEx/core`)
 * UnityEngine.dll (from `Rhythm Doctor Preorder_data/Managed`)
 * UnityEngine.CoreModule.dll (from `Rhythm Doctor Preorder_data/Managed`)
