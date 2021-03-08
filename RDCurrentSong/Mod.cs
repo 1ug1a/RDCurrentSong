@@ -3,11 +3,12 @@ using System.IO;
 using BepInEx;
 using BepInEx.Configuration;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace RDCurrentSong
 {
-    [BepInPlugin("com.rhythmdr.currentsong", "Rhythm Doctor Current Song Plugin", "1.2")]
-    [BepInProcess("Rhythm Doctor Preorder.exe")]
+    [BepInPlugin("com.rhythmdr.currentsong", "Rhythm Doctor Current Song Plugin by Lugi", "1.2.1")]
+    [BepInProcess("Rhythm Doctor.exe")]
     public class Mod : BaseUnityPlugin
     {
         private ConfigEntry<string> configName;
@@ -89,14 +90,18 @@ namespace RDCurrentSong
                 }
                 else
                 {
-                    splitLevel = newLevel.Split(new[] { " - " }, StringSplitOptions.RemoveEmptyEntries);
-                    using (StreamWriter outputFile = new StreamWriter(folder))
+                    if (newLevel == "") { }
+                    else
                     {
-                        outputFile.WriteLine(splitLevel[1]);
-                    }
-                    using (StreamWriter outputFile = new StreamWriter(folder2))
-                    {
-                        outputFile.WriteLine(splitLevel[0]);
+                        splitLevel = newLevel.Split(new[] { " - " }, StringSplitOptions.RemoveEmptyEntries);
+                        using (StreamWriter outputFile = new StreamWriter(folder))
+                        {
+                            outputFile.WriteLine(splitLevel[1].PadRight(minLength) + "".PadRight(spacing));
+                        }
+                        using (StreamWriter outputFile = new StreamWriter(folder2))
+                        {
+                            outputFile.WriteLine(splitLevel[0].PadRight(minLength) + "".PadRight(spacing));
+                        }
                     }
                 }
             }
