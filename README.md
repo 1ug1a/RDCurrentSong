@@ -12,6 +12,6 @@ How to install:
 
 Required libraries to compile the `.dll` yourself (not included because of copyright, need to add to `Libs`):
 * BepinEx.dll (from `BepinEx/core`)
-* UnityEngine.dll (from `Rhythm Doctor Preorder_data/Managed`)
-* UnityEngine.CoreModule.dll (from `Rhythm Doctor Preorder_data/Managed`)
-* Assembly-CSharp.dll (from `Rhythm Doctor Preorder_data/Managed`)
+* UnityEngine.dll (from `Rhythm Doctor_data/Managed`)
+* UnityEngine.CoreModule.dll (from `Rhythm Doctor_data/Managed`)
+* Assembly-CSharp.dll (from `Rhythm Doctor_data/Managed`)
