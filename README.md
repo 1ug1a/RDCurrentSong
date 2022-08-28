@@ -1,10 +1,10 @@
 # Rhythm Doctor Current Song Plugin
-*A [BepinEx](https://github.com/BepInEx/BepInEx/releases) plugin for Rhythm Doctor.*
+*A [BepinEx 5](https://github.com/BepInEx/BepInEx/releases) plugin for Rhythm Doctor.*
 
 Takes the current level's song and artist name and outputs it into a `.txt` file, for use in OBS or other streaming software.
 
 How to install:
-1. Download the latest release of BepinEx_x86 and `RDCurrentSong.dll` on the [Releases page](https://github.com/1ug1a/RDCurrentSong/releases).
+1. Download BepinEx 5 (the x86 version) and `RDCurrentSong.dll` on the [Releases page](https://github.com/1ug1a/RDCurrentSong/releases).
 2. Extract it to the folder containing the game `.exe`. 
 3. Run the game. BepinEx should create all of its necessary folders.
 4. Put `RDCurrentSong.dll` into the `BepinEx/plugins` folder.
